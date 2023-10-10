@@ -38,7 +38,7 @@ class MainController extends Controller {
     {
         $this->call->model('Main_model');
         $data['info'] = $this->Main_model->getInfo();
-        $data['edit'] = $this->Main_model->searchInfo($id);
+        $data['edit'] = $this->Main_model->searchIDInfo($id);
         $this->call->view('home', $data);
     }
     public function submitedit($id)

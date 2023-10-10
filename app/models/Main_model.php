@@ -6,7 +6,7 @@ class Main_model extends Model {
     {
         return $this->db->table('tblinfo')->get_all();
     }
-    public function searchInfo($id)
+    public function searchIDInfo($id)
     {
         return $this->db->table('tblinfo')->where('id',$id)->get();
     }
